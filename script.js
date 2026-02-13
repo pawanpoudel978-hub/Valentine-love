@@ -55,15 +55,6 @@ setInterval(()=>{
   setTimeout(()=>rose.remove(),7000);
 },400);
 
-// 📸 GALLERY SLIDER
-const images = ["photo1.jpg","photo2.jpg","photo3.jpg"];
-let index = 0;
-
-setInterval(()=>{
-  index = (index+1)%images.length;
-  document.getElementById("slide").src = "/index.html/" + images[index];
-},3000);
-
 // 💌 LETTER
 function openLetter(){
   document.getElementById("letterBox").style.display="flex";
@@ -79,5 +70,6 @@ style.innerHTML=`
 @keyframes fall{to{transform:translateY(110vh);opacity:0}}
 `;
 document.head.appendChild(style);
+
 
 
