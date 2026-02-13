@@ -1,0 +1,78 @@
+*{margin:0;padding:0;box-sizing:border-box}
+
+body{
+  background: radial-gradient(circle,#ff4b5c,#000);
+  font-family: Arial, sans-serif;
+  color:white;
+  text-align:center;
+  overflow-x:hidden;
+}
+
+.container{padding:20px}
+
+.title{
+  font-size:3em;
+  margin-top:20px;
+  animation: glow 2s infinite alternate;
+}
+
+.typewriter{
+  font-size:1.6em;
+  margin:10px;
+  color:#ffd1dc;
+}
+
+.countdown{
+  margin:15px;
+  font-size:1.2em;
+}
+
+.main-photo{
+  width:230px;
+  height:230px;
+  border-radius:50%;
+  border:5px solid white;
+  margin:20px;
+  object-fit:cover;
+}
+
+.gallery img{
+  width:260px;
+  border-radius:15px;
+  margin-top:20px;
+}
+
+button{
+  padding:12px 25px;
+  margin:10px;
+  border:none;
+  border-radius:25px;
+  background:white;
+  color:#ff4b5c;
+  cursor:pointer;
+  transition:.3s;
+}
+
+button:hover{transform:scale(1.1)}
+
+.letter-box{
+  position:fixed;
+  inset:0;
+  background:rgba(0,0,0,.7);
+  display:none;
+  justify-content:center;
+  align-items:center;
+}
+
+.letter-content{
+  background:white;
+  color:#ff4b5c;
+  padding:30px;
+  border-radius:20px;
+  width:300px;
+}
+
+@keyframes glow{
+  from{ text-shadow:0 0 10px white }
+  to{ text-shadow:0 0 30px white }
+}

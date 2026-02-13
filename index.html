@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For My Love ❤️</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- music -->
+<audio autoplay loop>
+  <source src="music.mp3"> type="audio/mp3">
+</audio>
+
+<div class="container">
+
+  <h1 class="title">Happy Valentine's Day 💖</h1>
+  <h2 id="typeName" class="typewriter"></h2>
+
+  <!-- countdown -->
+  <div id="countdown" class="countdown"></div>
+
+  <!-- main photo -->
+  <img src="photo1.jpg"> class="main-photo">
+
+  <p class="message">
+    Every moment with you feels like a beautiful dream ❤️  
+    I love you forever and always 💕
+  </p>
+
+  <button onclick="heartExplosion()">Touch My Heart 💘</button>
+  <button onclick="openLetter()">Read Secret Letter 💌</button>
+
+  <!-- gallery -->
+  <div class="gallery">
+    <img id="slide" src="photo1.jpg">
+  </div>
+
+</div>
+
+<!-- letter modal -->
+<div id="letterBox" class="letter-box">
+  <div class="letter-content">
+    <h2>My Forever ❤️</h2>
+    <p>
+      You came into my life like magic.  
+      Since then, every heartbeat whispers your name.  
+      I am the luckiest person to have you.  
+      Happy Valentine's Day, my love 💖
+    </p>
+    <button onclick="closeLetter()">Close</button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
