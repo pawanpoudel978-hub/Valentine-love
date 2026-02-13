@@ -61,7 +61,7 @@ let index = 0;
 
 setInterval(()=>{
   index = (index+1)%images.length;
-  document.getElementById("slide").src = "/static/" + images[index];
+  document.getElementById("slide").src = "/index.html/" + images[index];
 },3000);
 
 // 💌 LETTER
@@ -79,4 +79,5 @@ style.innerHTML=`
 @keyframes fall{to{transform:translateY(110vh);opacity:0}}
 `;
 document.head.appendChild(style);
+
 
