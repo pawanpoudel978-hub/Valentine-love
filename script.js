@@ -1,4 +1,9 @@
 // ❤️ TYPEWRITER NAME — EDIT HER NAME HERE
+document.body.addEventListener("click", () => {
+  const music = document.getElementById("bgMusic");
+  if (music) music.play();
+}, { once: true });
+
 const text = "For My Beautiful Princess 🥺💖";
 let i = 0;
 
@@ -74,3 +79,4 @@ style.innerHTML=`
 @keyframes fall{to{transform:translateY(110vh);opacity:0}}
 `;
 document.head.appendChild(style);
+
